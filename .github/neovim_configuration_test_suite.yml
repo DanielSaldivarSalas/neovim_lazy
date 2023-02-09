@@ -1,0 +1,32 @@
+name: Neovim Configuration Test
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup Neovim
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y neovim
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get install -y lua5.1 liblua5.1-dev luarocks
+        sudo luarocks install busted
+
+    - name: Run tests
+      run: |
+        busted tests/
+
+    - name: Upload test results
+      uses: actions/upload-artifact@v1
+      with:
+        name: test-results
+        path: tests/
+
