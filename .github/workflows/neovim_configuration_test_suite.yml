@@ -1,6 +1,10 @@
 name: Neovim Configuration Test
 
 on: [push]
+  push:
+    branches: [ "main" ]
+  pull_requests:
+    branches: [ "main" ]
 
 jobs:
   test:
