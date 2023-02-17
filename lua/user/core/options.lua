@@ -10,6 +10,21 @@ local options = {
 	shiftwidth = 4,
 	expandtab = true,
 	autoindent = true,
+
+	-- line wrapping
+	wrap = false,
+
+	-- search settings
+	ignorecase = true,
+	smartcase = true,
+
+	-- cursor line
+	cursorline = true,
+
+	-- appearance
+	termguicolors = true,
+	background = "dark",
+	signcolumn = "yes",
 }
 
 for k, v in pairs(options) do
