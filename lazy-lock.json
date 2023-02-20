@@ -1,4 +1,6 @@
 {
-  "lazy.nvim": { "branch": "main", "commit": "7339145a223dab7e7ddccf0986ffbf9d2cb804e8" },
-  "plenary.nvim": { "branch": "master", "commit": "9a0d3bf7b832818c042aaf30f692b081ddd58bd9" }
+  "catppuccin": { "branch": "main", "commit": "c5ed88194ae1d581d3083725a0dc7c90dd3446be" },
+  "lazy.nvim": { "branch": "main", "commit": "f2cc9ef6acc7367c001b7507c82cab3ab7c29cae" },
+  "plenary.nvim": { "branch": "master", "commit": "9d81624fbcedd3dd43b38d7e13a1e7b3f873d8cd" },
+  "tokyonight.nvim": { "branch": "main", "commit": "a0abe53df53616d13da327636cb0bcac3ea7f5af" }
 }
