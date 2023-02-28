@@ -14,6 +14,7 @@ return {
 			{ "folke/neodev.nvim", config = true },
 			{ "williamboman/mason.nvim", config = true },
 			{ "williamboman/mason-lspconfig.nvim", config = { ensure_installed = vim.tbl_keys(servers) } },
+			{ "mfussenegger/nvim-jdtls" },
 			"hrsh7th/cmp-nvim-lsp",
 		},
 		config = function()

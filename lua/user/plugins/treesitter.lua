@@ -51,6 +51,7 @@ return {
 				"typescript",
 				"vim",
 				"yaml",
+				"norg",
 			},
 			incremental_selection = {
 				enable = true,
